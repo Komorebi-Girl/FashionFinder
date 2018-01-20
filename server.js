@@ -18,9 +18,6 @@ app.use(bodyParser.json());
 
 var scores = [];
 
-console.log(apiRoutes)
-console.log(htmlRoutes)
-
 
 apiRoutes(app);
 htmlRoutes(app);

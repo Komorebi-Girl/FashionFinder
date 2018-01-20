@@ -31,12 +31,13 @@
 					<div class="form-group">
 						<label for="Photo">Link to Photo Image</label>
 						<input type="email" class="form-control" id="photo" placeholder= "Link to Your Profile Pic Here">
+					</div>	
 				</form>
 			</div>
 		</div>		
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option A</h3>
+				<h3>Good planning leads to wise decisions.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,7 +55,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option B</h3>
+				<h3>I prefer classic clothing that I can easily update with accessories.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -72,7 +73,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option C</h3>
+				<h3>I love to combine garments with rich texture and colors.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,7 +91,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option D</h3>
+				<h3>I can develop a wardrobe that works for me by understanding basic fashion principles.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -108,7 +109,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option E</h3>
+				<h3>I like to create an aura of mystery and magic about myself.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -126,7 +127,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option F</h3>
+				<h3>I would be lost without my old plaid flannel shirt.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -144,7 +145,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option G</h3>
+				<h3>A few top-quality, classic garments ensure that I am well-dressed for every occasion.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -162,7 +163,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option H</h3>
+				<h3>A tailored jacket should be loose enough so I can swing a golf club in it.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -180,7 +181,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option I</h3>
+				<h3>Beauty is an inside job that starts with how I feel about myself.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,7 +199,7 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>Pick option J</h3>
+				<h3>At my age, maintaining a healthy, outdoor lifestyle is more important than focusing on appearance.</h3>
 				<!-- Single button -->
 				<div class="btn-group">
 					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -216,13 +217,30 @@
 		</div>
 		<div class="row">
 			<div class="col-xs-3">
-				<button type="submit" class="btn btn-primary btn-lg" id="add-btn">Submit</button>
+				<button type="submit" class="btn btn-primary btn-lg" id="add-btn" data-toggle="modal" data-target="#myModal">Submit</button>
 			</div>
 		</div>
 
-
-
 	</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
 	<script type="text/javascript">
 		var scores = [];
 
@@ -231,6 +249,13 @@
 			scores.push(text);
 			console.log(scores);
 		});
+
+		// $('#exampleModal').on('show.bs.modal', function (event) {
+		// var button = $(event.relatedTarget) // Button that triggered the modal
+		// var recipient = button.data('whatever') // Extract info through a AJAX get request here? (and then do the updating in a callback?
+		// var modal = $(this)
+		// modal.find('.modal-title').text(yourMatch.name)
+		// })
 
 		$("#add-btn").on("click", function(event) {
 		      event.preventDefault();
@@ -243,6 +268,7 @@
 			$.post("/api/profiles", newProfile).then(function(data) {
 				console.log(data);
 				alert("Adding profile...");
+				$('#myModal').modal(options)
 				});       
       	});
 	</script>	

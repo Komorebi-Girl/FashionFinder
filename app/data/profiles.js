@@ -16,7 +16,7 @@ var Profiles = [
 {
 	name: "Aritzia",
 	photo: "https://s3-media2.fl.yelpcdn.com/bphoto/Igrg9ePtqS-E5a9T7WlKGw/348s.jpg",
-	scores: [1, 1, 5, 1, 5, 3, 3, 4, 4, 4]
+	scores: [5, 4, 3, 5, 4, 1, 4, 2, 1, 2]
 }];
 
 
