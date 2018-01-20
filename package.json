@@ -1,0 +1,22 @@
+{
+  "name": "fashionfinder",
+  "version": "1.0.0",
+  "description": "An app that help the user find their store match with a survey",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Komorebi-Girl/FashionFinder.git"
+  },
+  "author": "Stacy JP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Komorebi-Girl/FashionFinder/issues"
+  },
+  "homepage": "https://github.com/Komorebi-Girl/FashionFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
