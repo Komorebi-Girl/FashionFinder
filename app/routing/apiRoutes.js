@@ -13,6 +13,7 @@ function apiExpressify(app) {
 		var enteries = newProfile.scores.map(Number);
 		console.log(newProfile);
 		var smallest = 10000000;
+		var yourMatch; 
 
 		for (var i = 0; i < profiles.length; i++) {
 			profiles[i].diff = diffChecker(enteries, profiles[i].scores);
@@ -22,7 +23,7 @@ function apiExpressify(app) {
 			if (profiles[i].diff < smallest) {
 				smallest = profiles[i].diff;
 				console.log(smallest)
-				var yourMatch = profiles[i];
+				yourMatch = profiles[i];
 			}
 
 			console.log("Your matching store is: "+ yourMatch.name)
@@ -30,8 +31,8 @@ function apiExpressify(app) {
 		}
 
 
-		profiles.push(newProfile);
-		res.json(newProfile);
+		// profiles.push(newProfile);
+		res.json(yourMatch);
 	});
 }
 
