@@ -258,7 +258,6 @@
 
 			$.post("/api/profiles", newProfile).then(function(data) {
 				console.log(data);
-				alert("Adding profile..."); 
 					var yourStore = $("<h1>");
 					yourStore.html("Your Matching Store is: "+data.name);
 					$(".modal-header").append(yourStore);
