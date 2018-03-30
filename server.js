@@ -1,4 +1,3 @@
-
 // Dependencies
 var express = require("express");
 var apiRoutes = require("./app/routing/apiRoutes.js");
@@ -10,15 +9,14 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(__dirname + "/app/public"));
 
 var scores = [];
-
 
 apiRoutes(app);
 htmlRoutes(app);
@@ -28,6 +26,3 @@ htmlRoutes(app);
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
-
-
-
